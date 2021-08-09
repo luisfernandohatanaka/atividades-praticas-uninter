@@ -1,0 +1,9 @@
+p {
+    margin: auto;
+}
+.paragrafo-principal {
+    font-size: 12px;
+    font-family: 'book antiqua', 'Arial Narrow';
+    color: green;
+    margin: auto;
+}
