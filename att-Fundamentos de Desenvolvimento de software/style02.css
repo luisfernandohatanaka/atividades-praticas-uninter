@@ -1,0 +1,17 @@
+table, th, td{
+    text-align: left;
+    border: 1px solid black;
+}
+
+th{
+    width: 5em;
+}
+
+.titulo-cor {
+    background-color: rgb(182, 106, 56);
+
+}
+
+.botao-enviar {
+    text-align: center;
+}

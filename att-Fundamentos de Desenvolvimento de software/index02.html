@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade pratica 02</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style02.css">
     <style>
         table, td, tr {
             border: 1px solid black;
@@ -12,38 +14,40 @@
     </style>
 </head>
 <body>
-    <table>
-        <tbody>
-            <tr>
-                <td>Nome</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Tamanho</td>
-                <td style="display: block;"><input type="radio">OPCAO 1</td>
-                <td style="display: block;"><input type="radio">OPCAO 2</td>
-                <td style="display: block;"><input type="radio">OPCAO 3</td>
-            </tr>
-            <tr>
-                <td>Sabor</td>
-                <td><select>
-                    <option>Por favor selecione</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td>Adicionais</td>
-                <td><input type="checkbox">Borda</input></td>
-                <td><input type="checkbox">Queijo</input></td>
-            </tr>
-            <tr>
-                <td>Observações</td>
-                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
-            </tr>
-            <tr>
-                <td><input type="submit"></td>
-            </tr>
-        </tbody>
-    </table>
+    <div>
+        <table class="tabela_pizza">
+            <tbody>
+                <tr>
+                    <td class="titulo">Nome</td>
+                    <td class="titulo"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="tamanho">Tamanho</td>
+                    <td><input type="radio" class="opcao">OPCAO 1</td>
+                    <td><input type="radio" class="opcao">OPCAO 2</td>
+                    <td><input type="radio" class="opcao">OPCAO 3</td>
+                </tr>
+                <tr>
+                    <td class="titulo">Sabor</td>
+                    <td class="titulo"><select>
+                        <option>Por favor selecione</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Adicionais</td>
+                    <td><input type="checkbox">Borda</input></td>
+                    <td><input type="checkbox">Queijo</input></td>
+                </tr>
+                <tr>
+                    <td class="titulo">Observações</td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
