@@ -1,11 +1,11 @@
 while True:
-    inicio = int(input('Inserir dados? [0] - Não | [1] - Sim '))
+    inicio = str(input('Inserir dados? [S/N]: ')).strip().upper()
 
-    if inicio == 0:
+    if inicio in 'N NAO':
         print('Fim do programa')
         break
 
-    if inicio == 1:
+    if inicio in 'S SIM':
         nome_aluno = str(input('Nome do Aluno: '))
         nota_final = float(input('Nota final: '))
 

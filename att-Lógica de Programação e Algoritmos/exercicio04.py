@@ -4,12 +4,13 @@ lista = []
 dicionario = {}
 
 while True:
-    dicionario['codigo'] = int(input('Informe o código. Digite 0 [ZERO] para encerrar: '))
+    print('Digite 0 [ZERO] no código para encerrar')
+    dicionario['codigo'] = int(input('Código: '))
     if dicionario['codigo'] == 0:
         break
     else:
-        dicionario['estoque'] = int(input('Informe o valor: '))
-        dicionario['minimo'] = int(input('Informe o valor: '))
+        dicionario['estoque'] = int(input('Estoque: '))
+        dicionario['minimo'] = int(input('Mínimo: '))
         lista.append(dicionario.copy())
 listaOrdenada = sorted(lista, key=itemgetter('codigo'))
 
