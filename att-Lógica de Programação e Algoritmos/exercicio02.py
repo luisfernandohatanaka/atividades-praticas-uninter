@@ -3,7 +3,12 @@ def email(n, s):
     return res
 
 
-nome = input('Digite seu nome: ').strip().title()
-sobrenome = input('Digite seu sobrenome: ').strip().title()
+while True:
+    nome = str(input('Digite seu nome: ')).strip().title()
+    sobrenome = str(input('Digite seu sobrenome: ')).strip().title()
+    if nome.isalpha() and sobrenome.isalpha():
+        break
+    else:
+        print('Digite apenas letras')
 x = email(nome, sobrenome)
 print('Sr(a) {} {}, seu email é {}'.format(nome, sobrenome, x))

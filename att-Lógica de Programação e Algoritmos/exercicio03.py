@@ -1,11 +1,27 @@
 import random
 from time import sleep
 
+
+def ler_numero(mensagem):
+    while True:
+        try:
+            f = int(input(mensagem))
+            return f
+        except ValueError:
+            print('Digite um número válido')
+
+
 sorteio = list()
 
 while True:
-    nome = str(input('Nome do doador: ')).strip().title()
-    valor_doado = int(input('Digite o valor doado: '))
+    while True:
+        nome = str(input('Nome do doador: ')).strip().title()
+        if nome.isalpha():
+            break
+        else:
+            print('Digite um nome válido')
+            continue
+    valor_doado = ler_numero('Digite o valor doado: ')
     total, resto = divmod(valor_doado, 10)
 
     if resto == 0:
@@ -14,19 +30,18 @@ while True:
         print('valor inválido, deve ser múltiplo de 10 e maior que zero(10, 20, 30...')
 
     continuar = str(input('Deseja continuar?: [S/N] ')).upper()[0]
-    if continuar in 'S':
-        continue
-    elif continuar in 'N':
+    while continuar not in 'SN':
+        continuar = str(input('Deseja continuar?: [S/N] ')).upper()[0]
+    if continuar in 'N':
         break
 
 print(f'A lista de doadores ficou assim: {sorteio}')
 print('Sorteando!!!')
 
-for cont in range (5,0,-1):
+for cont in range(5, 0, -1):
     print('{}{}{}'.format('\033[1;31m', cont, '\033[m'))
     sleep(1)
     random.shuffle(sorteio)
 
 ganhador = random.choice(sorteio)
 print(f'O ganhador(a) foi {ganhador}')
-
