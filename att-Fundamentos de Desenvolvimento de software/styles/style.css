@@ -1,6 +1,9 @@
+/* Definindo a margin para automatico do primeiro "p" */
 p {
     margin: auto;
+    margin-bottom: 10px;
 }
+/* Estilização do texto completo*/ 
 .paragrafo-principal {
     font-size: 12px;
     font-family: 'book antiqua', 'Arial Narrow';

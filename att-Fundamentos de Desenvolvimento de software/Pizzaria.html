@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+    <link rel="stylesheet" href="styles/style02.css">
+    
+</head>
+<body>
+    <div>
+        <!-- Inicio da tabela -->
+        <table>
+            <!-- Linha e coluna da imagem de fundo da tabela -->
+            <!-- Colspan utilizado para unir colunas -->
+            <tr>
+                <td colspan="2" class="imagem"></td>
+            </tr>
+            
+            <tr>
+                <th class="titulo-cor">Nome</th>
+                <!-- Input do tipo texto, referente ao nome -->
+                <td class="titulo-cor"><input type="text" style="width: 540px;"></td>
+            </tr>
+
+        <tr>
+            <th>Tamanho</th>
+            <!-- Sequencia de inputs do tipo radio, para ser escolhido uma opção.
+            colocada a marcação "name" para referenciar todos os radio buttons e escolhar somente uma opção. -->
+            <td><input type="radio" name="escolha" checked>Pequeno
+            <br>
+            <input type="radio" name="escolha" >Médio
+            <br>
+            <input type="radio" name="escolha" >Grande
+        </tr>
+
+        <tr>
+            <th class="titulo-cor">Sabor</th>
+            <!-- Inserindo uma caixa de escolhas com "select" e "options", para ser escolhido um sabor de pizza -->
+            <td class="titulo-cor"><select>
+                <!-- nessa parte eu quis tirar a opção da primeira escolha, deixar ela somente "legivel"  -->
+                <option value="" disabled selected>Escolha um sabor</option>
+                <option value="">Strogonoff de carne</option>
+                <option value="">Calabresa</option>
+                <option value="">Paulista</option>
+                <option value="">Vegetariana</option>
+                <option value="">Camarão</option>
+                <option value="">Sensação</option>
+                <option value="">Prestígio</option>
+                <!-- divisão de sabores salgados dos doces -->
+                <option value="" disabled >--- Doces ---</option>
+                <option value="">Sensação</option>
+                <option value="">Prestígio</option>
+                <option value="">Banana com Canela</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <th>Borda</th>
+            <!-- Adiciona um checkbox para escolher alguma borda recheada -->
+            <td><input type="checkbox">Requeijão Cremoso</input>
+            <br>
+            <input type="checkbox">Cheedar</input>
+            <br>
+            <input type="checkbox">Mussarela</input>
+            <br>
+            <input type="checkbox">Chocolate Preto</input>
+            <br>
+            <input type="checkbox">Chocolate Branco</input>
+            </td>
+        </tr>
+
+        <tr class="titulo-cor">
+            <th colspan="2">Observações
+            <br>
+            <!-- Adiocona uma caixa de texto "optei por tirar o tamanho ajustavel no canto inferior direito pra não desregular as medidas da table"-->
+            <textarea cols="30" rows="10" style="width: 612px; resize: none;"></textarea>
+            </th>
+        </tr>
+
+        <tr>
+            <!-- Botão para enviar o pedido -->
+            <td colspan="2" class="botao-enviar"><button type="button">Enviar</button></td>
+        </tr>
+
+        </table>
+
+    </div>
+
+</body>
+</html>

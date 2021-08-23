@@ -16,10 +16,19 @@ def nome(msg):
             return nome_aluno
 
 
+def lista():
+    print('|     Nota    |', '|   Conceito   |')
+    print('|  0,0 a 2,9  |', '|      E       |')
+    print('|  3,0 a 4,9  |', '|      D       |')
+    print('|  5,0 a 6,9  |', '|      C       |')
+    print('|  7,0 a 8,9  |', '|      B       |')
+    print('|  9,0 a 10,0 |', '|      A       |')
+    print('\n', ' ' * 6, 'Fim do programa!!')
+
+
 while True:
     inicio = str(input('Inserir dados? [S/N]: ')).strip().upper()
     if inicio in 'N':
-        print('Fim do programa')
         break
 
     if inicio in 'S':
@@ -52,3 +61,4 @@ while True:
                     print('O Aluno(a) {} tirou {} e se enquadra no Conceito A'.format(nome_aluno, nota_final))
     else:
         print('Opção Inválida')
+lista()

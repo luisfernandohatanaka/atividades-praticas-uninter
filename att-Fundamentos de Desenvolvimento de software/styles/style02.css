@@ -1,0 +1,30 @@
+/* coloquei essa formatação pro texto ficar um pouco centralizado */
+div{
+    overflow-x:auto;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* pegando a imagem da pizzaria pelo css e definindo suas propriedades */
+.imagem{
+    background: url("https://media.istockphoto.com/photos/tasty-pepperoni-pizza-and-cooking-ingredients-tomatoes-basil-on-black-picture-id1083487948?k=6&m=1083487948&s=612x612&w=0&h=lK-mtDHXA4aQecZlU-KJuAlN9Yjgn3vmV2zz5MMN7e4=");
+    background-size: cover;
+    height: 400px;
+}
+
+/* adicionando borda na tabela */
+table, th, td{
+    text-align: left;
+    border: 1px solid black;
+}
+
+/* colocando cor em algumas linhas */
+.titulo-cor {
+    background-color: rgb(182, 106, 56);
+}
+
+/* definindo o botao enviar no centro da table */
+.botao-enviar {
+    text-align: center;
+}

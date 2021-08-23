@@ -9,6 +9,6 @@ while True:
     if nome.isalpha() and sobrenome.isalpha():
         break
     else:
-        print('Digite apenas letras')
-x = email(nome, sobrenome)
-print('Sr(a) {} {}, seu email é {}'.format(nome, sobrenome, x))
+        print('[ERRO]. Digite apenas letras')
+emailCompleto = email(nome, sobrenome)
+print('Sr(a) {} {}, seu email é {}'.format(nome, sobrenome, emailCompleto))
