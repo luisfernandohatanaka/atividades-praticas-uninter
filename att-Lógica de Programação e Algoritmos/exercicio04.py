@@ -1,7 +1,7 @@
 # do modulo operator foi importado a função itemgetter
 from operator import itemgetter
 
-# validaçao de numeros
+# validação de numeros
 def ler_numero(mensagem):
     while True:
         try:

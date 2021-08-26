@@ -14,7 +14,7 @@ while True:
     # caso seja digitado numeros, 2 ou + nomes, ou qualquer caracter especial, ele cai no else e volta para o looping
     else:
         print('[ERRO]. Digite apenas letras')
-# variavel criada para criar o email
+# variavel para criar o email
 emailCompleto = email(nome, sobrenome)
 #  print na tela com o email e o nome da pessoa
 print('Sr(a) {} {}, seu email é {}'.format(nome, sobrenome, emailCompleto))
