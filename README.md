@@ -1,2 +1,2 @@
-# atividades-praticas
- atividades praticas da aula de Fundamentos de Desenvolvimento de software
+# atividades-praticas (avaliativa)
+ Trabalho avaliativo referente as disciplinas de Lógica de Programação e Algoritmos // Fundamentos de Desenvolvimento de software
